@@ -75,31 +75,37 @@ ORDER BY Total_sales DESC;
 
 2. Get the total number of transactions for each gender
 ```sql
-SELECT Gender,
-COUNT(*) AS Total_Transactions
-FROM Retail_sales
+SELECT 
+    Gender, COUNT(*) AS Total_Transactions
+FROM
+    Retail_sales
 GROUP BY Gender;
 ```
+
 3. Retrieve all sales records for the "Clothing" category.
 ```sql
-SELECT * 
-FROM Retail_sales
-WHERE Category = 'Clothing';
+SELECT 
+    *
+FROM
+    Retail_sales
+WHERE
+    Category = 'Clothing';
 ```
 
 4. Find the total quantity of products sold per category.
 ```sql
-SELECT CATegory,
-SUM(QUANtity) AS TOTal_Quantity
-FROM RETail_sales
-GROUP BY CATegory;
+SELECT 
+    Category, SUM(quantity) AS Total_Quantity
+FROM
+    Retail_sales
+GROUP BY Category;
 ```
 
 5. Get the average total sale per transaction for each category.
 ```sql
 SELECT
     Category,
-    AVG(toTAL_sale) AS aVeRAge_total_sale
+    AVG(total_sale) AS average_total_sale
 FROM
     Retail_sales
 GROUP BY
@@ -199,18 +205,22 @@ LIMIT 1;
 
 14. Get the top 5 highest single transactions based on total sales.
 ```sql
-select *
-from retail_sales
-order by total_sale desc
-limit 5;
+SELECT 
+    *
+FROM
+    retail_sales
+ORDER BY total_sale DESC
+LIMIT 5;
 ```
 
 15. Find the average price per unit for each category.
 ```sql
-select category,
-avg(price_per_unit) as Average_unit_Price
-from retail_sales
-group by category;
+SELECT 
+    category, AVG(price_per_unit) AS Average_unit_Price
+FROM
+    retail_sales
+GROUP BY category;
+
 ```
 
 16. Write a SQL query to calculate the average sale for each month. Find out best selling month in each year
