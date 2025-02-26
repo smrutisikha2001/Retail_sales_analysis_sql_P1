@@ -1,0 +1,21 @@
+Business Problems:
+
+1️ Find the total sales for each category.
+2️ Get the total number of transactions for each gender.
+3️ Retrieve all sales records for the "Clothing" category.
+4️ Find the total quantity of products sold per category.
+
+🔹 Intermediate Level
+5️ Get the average total sale per transaction for each category.
+6️ Find the month with the highest sales.
+7️ Identify customers who have made more than 2 purchases.
+8️ Calculate the profit for each transaction (Profit = Total Sale - COGS).
+9️ Rank customers based on their total spending.
+10 Calculate the month-over-month revenue growth.
+1️1 Find customers who haven’t purchased anything in the last 3 months.
+1️2 Calculate the running total of sales over time.
+1️3 Find the most profitable category (Total Sales - Total COGS).
+1️4 Get the top 5 highest single transactions based on total sales.
+1️5 Find the average price per unit for each category.
+16 Write a SQL query to calculate the average sale for each month. Find out best selling month in each year
+17 Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)
